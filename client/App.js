@@ -9,7 +9,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Grid
-        columns={"minmax(300px, 1fr) minmax(194px, 350px) 194px"}
+        columns={"minmax(300px, 1fr) minmax(0px, 350px) minmax(0px, 194px)"}
         rows={"108px minmax(537px, 1fr)"}
         justifyContent="space-around"
         areas={[
@@ -38,13 +38,19 @@ export default class App extends React.Component {
           style={{ display: "flex", verticalAlign: "middle" }}
           area="roy-comp"
         >
-          <div id="productDescription"></div>
+          <div
+            id="productDescription"
+            className="d-md-none d-lg-block d-sm-none d-md-block "
+          ></div>
         </Cell>
         <Cell
           middle
           style={{ display: "flex", verticalAlign: "middle" }}
           area="travis-comp"
-        ></Cell>
+        >
+          {" "}
+          <div className="d-md-none d-lg-block d-sm-none d-md-block "></div>
+        </Cell>
         <Cell
           middle
           style={{ display: "flex", verticalAlign: "middle" }}
