@@ -10,7 +10,7 @@ export default class App extends React.Component {
     return (
       <Grid
         columns={
-          "1fr minmax(300px, 420px) minmax(0px, 350px) minmax(0px, 194px)"
+          "1fr minmax(300px, 420px) minmax(200px, 350px) minmax(194px, 250px)"
         }
         rows={"108px minmax(537px, 1fr)"}
         justifyContent="space-around"
@@ -42,8 +42,9 @@ export default class App extends React.Component {
         >
           <div
             id="productDescription"
-            className="d-md-none d-lg-block d-sm-none d-md-block "
+            className="d-none d-sm-block"
           ></div>
+         
         </Cell>
         <Cell
           middle
@@ -51,7 +52,7 @@ export default class App extends React.Component {
           area="travis-comp"
         >
           {" "}
-          <div className="d-md-none d-lg-block d-sm-none d-md-block "></div>
+          <div className="d-none d-sm-block"></div>
         </Cell>
         <Cell
           middle
