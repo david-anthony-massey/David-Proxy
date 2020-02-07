@@ -10,30 +10,26 @@ export default class App extends React.Component {
     return (
       <Grid
         columns={
-          "1fr minmax(300px, 420px) minmax(200px, 350px) minmax(194px, 250px)"
+          "minmax(0px, 1fr) 420px minmax(240px, 350px) minmax(0px, 1fr) minmax(0px, 350px)"
         }
         rows={"108px minmax(537px, 1fr)"}
         justifyContent="space-around"
         areas={[
-          "matt-comp matt-comp matt-comp matt-comp",
-          ". tay-comp roy-comp travis-comp",
-          "david-comp david-comp david-comp david-comp",
-          "mark-comp mark-comp mark-comp mark-comp"
+          "matt-comp matt-comp matt-comp matt-comp matt-comp",
+          "tay-comp tay-comp roy-comp . travis-comp",
+          "david-comp david-comp david-comp david-comp david-comp",
+          "mark-comp mark-comp mark-comp mark-comp mark-comp"
         ]}
       >
-        <Cell
-          middle
-          style={{ display: "flex", verticalAlign: "middle" }}
-          area="matt-comp"
-        >
+        <Cell style={{ display: "flex" }} area="matt-comp">
           <div id="app"></div>
         </Cell>
         <Cell
           middle
-          style={{ display: "flex", verticalAlign: "middle" }}
+          style={{ display: "flex", verticalAlign: "middle"}}
           area="tay-comp"
         >
-          <div id="tay-prodimage"></div>
+          <div id="tay-prodimage" style={{minWidth:768, verticalAlign: "middle"}}></div>
         </Cell>
         <Cell
           middle
@@ -43,16 +39,19 @@ export default class App extends React.Component {
           <div
             id="productDescription"
             className="d-none d-sm-block"
+            style={{ marginLeft: "35px" }}
           ></div>
-         
         </Cell>
         <Cell
           middle
           style={{ display: "flex", verticalAlign: "middle" }}
           area="travis-comp"
         >
-          {" "}
-          <div className="d-none d-sm-block"></div>
+          <div
+            id="appTravis"
+            className="d-none d-sm-block"
+            style={{ marginLeft: "35px" }}
+          ></div>
         </Cell>
         <Cell
           middle
