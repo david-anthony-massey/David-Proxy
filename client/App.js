@@ -9,14 +9,16 @@ export default class App extends React.Component {
   render() {
     return (
       <Grid
-        columns={"minmax(300px, 1fr) minmax(0px, 350px) minmax(0px, 194px)"}
+        columns={
+          "1fr minmax(300px, 420px) minmax(0px, 350px) minmax(0px, 194px)"
+        }
         rows={"108px minmax(537px, 1fr)"}
         justifyContent="space-around"
         areas={[
-          "matt-comp matt-comp matt-comp",
-          "tay-comp roy-comp travis-comp",
-          "david-comp david-comp david-comp",
-          "mark-comp mark-comp mark-comp"
+          "matt-comp matt-comp matt-comp matt-comp",
+          ". tay-comp roy-comp travis-comp",
+          "david-comp david-comp david-comp david-comp",
+          "mark-comp mark-comp mark-comp mark-comp"
         ]}
       >
         <Cell
