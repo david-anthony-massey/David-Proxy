@@ -9,13 +9,14 @@ export default class App extends React.Component {
   render() {
     return (
       <Grid
-        columns={"240px 240px 240px 240px 240px 240px"}
-        justifyContent="start"
+        columns={"minmax(300px, 1fr) minmax(194px, 350px) 194px"}
+        rows={"108px minmax(537px, 1fr)"}
+        justifyContent="space-around"
         areas={[
-          "matt-comp matt-comp matt-comp matt-comp matt-comp matt-comp",
-          "tay-comp tay-comp roy-comp roy-comp travis-comp travis-comp",
-          "david-comp david-comp david-comp david-comp david-comp david-comp",
-          "mark-comp mark-comp mark-comp mark-comp mark-comp mark-comp"
+          "matt-comp matt-comp matt-comp",
+          "tay-comp roy-comp travis-comp",
+          "david-comp david-comp david-comp",
+          "mark-comp mark-comp mark-comp"
         ]}
       >
         <Cell
@@ -24,8 +25,6 @@ export default class App extends React.Component {
           area="matt-comp"
         >
           <div id="app"></div>
-
-          
         </Cell>
         <Cell
           middle
@@ -33,8 +32,6 @@ export default class App extends React.Component {
           area="tay-comp"
         >
           <div id="tay-prodimage"></div>
-
-          
         </Cell>
         <Cell
           middle
@@ -42,8 +39,6 @@ export default class App extends React.Component {
           area="roy-comp"
         >
           <div id="productDescription"></div>
-
-          
         </Cell>
         <Cell
           middle
@@ -56,8 +51,6 @@ export default class App extends React.Component {
           area="david-comp"
         >
           <div id="reviews"></div>
-
-          
         </Cell>
         <Cell
           middle
@@ -65,7 +58,6 @@ export default class App extends React.Component {
           area="mark-comp"
         >
           <div id="carousel"></div>
-          
         </Cell>
       </Grid>
     );
