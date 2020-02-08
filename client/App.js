@@ -52,7 +52,7 @@ export default class App extends React.Component {
             <div id="reviews"></div>
           </Cell>
         </Grid>
-        <div id="carousel"></div>
+        <div id="carousel" style={{ marginTop: "25px" }}></div>
       </div>
     );
   }
