@@ -10,15 +10,14 @@ export default class App extends React.Component {
     return (
       <Grid
         columns={
-          "minmax(30px, 1fr) 600px minmax(240px, 430px) minmax(0px, 1fr) minmax(190px, 350px)"
+          "minmax(80px, 1fr) minmax(300px, 600px) minmax(240px, 430px) minmax(0px, 1fr) minmax(190px, 350px)"
         }
         rows={"108px minmax(px, 1fr)"}
         justifyContent="space-between"
         areas={[
           "matt-comp matt-comp matt-comp matt-comp matt-comp",
           "tay-comp tay-comp roy-comp . travis-comp",
-          "david-comp david-comp david-comp david-comp david-comp",
-          "mark-comp mark-comp mark-comp mark-comp mark-comp"
+          "david-comp david-comp david-comp david-comp david-comp"
         ]}
       >
         <Cell area="matt-comp">
@@ -51,14 +50,8 @@ export default class App extends React.Component {
         >
           <div id="reviews"></div>
         </Cell>
-        <Cell
-          middle
-          style={{ display: "flex", verticalAlign: "middle" }}
-          area="mark-comp"
-        >
-          <div id="carousel"></div>
-        </Cell>
       </Grid>
+      <div id="carousel"></div>
     );
   }
 }
