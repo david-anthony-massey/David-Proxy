@@ -10,10 +10,10 @@ export default class App extends React.Component {
     return (
       <Grid
         columns={
-          "minmax(0px, 1fr) 420px minmax(240px, 430px) minmax(0px, 1fr) minmax(0px, 350px)"
+          "minmax(30px, 1fr) 600px minmax(240px, 430px) minmax(0px, 1fr) minmax(0px, 350px)"
         }
         rows={"108px minmax(px, 1fr)"}
-        justifyContent="space-around"
+        justifyContent="space-between"
         areas={[
           "matt-comp matt-comp matt-comp matt-comp matt-comp",
           "tay-comp tay-comp roy-comp . travis-comp",
