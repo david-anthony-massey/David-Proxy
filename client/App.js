@@ -10,9 +10,9 @@ export default class App extends React.Component {
     return (
       <Grid
         columns={
-          "minmax(0px, 1fr) 420px minmax(240px, 350px) minmax(0px, 1fr) minmax(0px, 350px)"
+          "minmax(0px, 1fr) 420px minmax(240px, 430px) minmax(0px, 1fr) minmax(0px, 350px)"
         }
-        rows={"108px minmax(537px, 1fr)"}
+        rows={"108px minmax(px, 1fr)"}
         justifyContent="space-around"
         areas={[
           "matt-comp matt-comp matt-comp matt-comp matt-comp",
@@ -21,21 +21,16 @@ export default class App extends React.Component {
           "mark-comp mark-comp mark-comp mark-comp mark-comp"
         ]}
       >
-        <Cell style={{ display: "flex" }} area="matt-comp">
+        <Cell area="matt-comp">
           <div id="app"></div>
         </Cell>
-        <Cell
-          middle
-          style={{ display: "flex", verticalAlign: "middle"}}
-          area="tay-comp"
-        >
-          <div id="tay-prodimage" style={{minWidth:768, verticalAlign: "middle"}}></div>
+        <Cell middle style={{ display: "flex" }} area="tay-comp">
+          <div
+            id="tay-prodimage"
+            style={{ minWidth: 768, verticalAlign: "top", alignSelf: "top" }}
+          ></div>
         </Cell>
-        <Cell
-          middle
-          style={{ display: "flex", verticalAlign: "middle" }}
-          area="roy-comp"
-        >
+        <Cell middle style={{ display: "flex" }} area="roy-comp">
           <div
             id="productDescription"
             className="d-none d-sm-block"
@@ -47,11 +42,7 @@ export default class App extends React.Component {
           style={{ display: "flex", verticalAlign: "middle" }}
           area="travis-comp"
         >
-          <div
-            id="appTravis"
-            className="d-none d-sm-block"
-            style={{ marginLeft: "35px" }}
-          ></div>
+          <div id="appTravis" className="d-none d-sm-block"></div>
         </Cell>
         <Cell
           middle
