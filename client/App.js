@@ -33,7 +33,6 @@ export default class App extends React.Component {
           <Cell middle style={{ display: "flex" }} area="roy-comp">
             <div
               id="productDescription"
-              className="d-none d-sm-block"
               style={{
                 marginLeft: "35px",
                 textOverflow: "ellipsis",
@@ -46,7 +45,7 @@ export default class App extends React.Component {
             style={{ display: "flex", verticalAlign: "middle" }}
             area="travis-comp"
           >
-            <div id="appTravis" className="d-none d-sm-block"></div>
+            <div id="appTravis"></div>
           </Cell>
           <Cell
             middle
