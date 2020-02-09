@@ -11,7 +11,7 @@ export default class App extends React.Component {
       <div>
         <Grid
           columns={
-            "minmax(600px,720px) minmax(320px,600px) minmax(190px,350px)"
+            "minmax(600px,720px) minmax(320px,600px) minmax(333px,350px)"
           }
           rows={"108px minmax(760px, 920px)"}
           justifyContent="space-between"
