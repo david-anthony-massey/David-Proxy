@@ -11,7 +11,7 @@ export default class App extends React.Component {
       <div>
         <Grid
           columns={
-            "minmax(600px,765px) minmax(320px,580px) minmax(190px,350px)"
+            "minmax(600px,720px) minmax(320px,600px) minmax(190px,350px)"
           }
           rows={"108px minmax(760px, 920px)"}
           justifyContent="space-between"
@@ -34,7 +34,12 @@ export default class App extends React.Component {
             <div
               id="productDescription"
               className="d-none d-sm-block"
-              style={{ marginLeft: "35px" }}
+              style={{
+                marginLeft: "35px",
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
+                overflow: "hidden"
+              }}
             ></div>
           </Cell>
           <Cell
