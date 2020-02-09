@@ -11,14 +11,14 @@ export default class App extends React.Component {
       <div>
         <Grid
           columns={
-            "minmax(80px, 1fr) minmax(300px, 600px) minmax(240px, 430px) minmax(0px, 1fr) minmax(190px, 350px)"
+            "minmax(320px,800px) minmax(240px,580px) minmax(190px,350px)"
           }
           rows={"108px minmax(px, 1fr)"}
           justifyContent="space-between"
           areas={[
-            "matt-comp matt-comp matt-comp matt-comp matt-comp",
-            "tay-comp tay-comp roy-comp . travis-comp",
-            "david-comp david-comp david-comp david-comp david-comp"
+            "matt-comp matt-comp matt-comp",
+            "tay-comp roy-comp travis-comp",
+            "david-comp david-comp david-comp"
           ]}
         >
           <Cell area="matt-comp">
