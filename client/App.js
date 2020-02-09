@@ -37,7 +37,6 @@ export default class App extends React.Component {
               style={{
                 marginLeft: "35px",
                 textOverflow: "ellipsis",
-                whiteSpace: "nowrap",
                 overflow: "hidden"
               }}
             ></div>
