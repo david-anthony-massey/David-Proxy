@@ -5,8 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack -d --watch",
-    "server_start": "nodemon server/index.js"
+    "start_dev": "webpack -d --watch",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
